@@ -99,6 +99,7 @@ public class VulcanStorage {
 
     public long getAverageViolations() {
         Set<UUID> uuids = getPlayerUUIDs();
+        if (uuids.size() == 0) return 0;
         long totalViolations = 0;
         for (UUID uuid : uuids) {
             totalViolations += getTotalViolations(uuid);
