@@ -1,0 +1,8 @@
+name: VulcanPlanAddon
+version: '${project.version}'
+main: com.shimincraft.planvulcan.planvulcan.PlanVulcan
+api-version: 1.19
+authors: [ Scot_Survivor ]
+softdepend:
+  - Vulcan
+  - Plan
